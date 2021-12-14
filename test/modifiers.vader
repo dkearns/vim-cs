@@ -1,0 +1,6 @@
+Given cs (unsafe modifier):
+  unsafe void foobar() { /* boom! */ }
+
+Execute:
+  AssertEqual 'csModifier', SyntaxAt(1, 1)
+
